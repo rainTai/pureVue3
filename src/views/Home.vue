@@ -1,9 +1,5 @@
 <template>
-  <div class="main">
-    <Pieces />
-    <Controller />
-    <Space />
-  </div>
+  <div class="main"></div>
 </template>
 
 <script lang="ts">
@@ -13,20 +9,12 @@ import {
   onBeforeUnmount,
   getCurrentInstance,
 } from "vue";
-import Pieces from "./left/pieces.vue";
-import Controller from "./right/controller.vue";
-import Space from "./middle/space.vue";
+
 export default defineComponent({
   name: "Home",
-  components: {
-    Pieces,
-    Controller,
-    Space,
-  },
   setup: () => {
-    // @ts-ignore //注释这个引用报错
+    // @ts-ignore //获取全局变量
     const { ctx } = getCurrentInstance();
-    const THREE = ctx.$three;
     onMounted(() => {});
     onBeforeUnmount(() => {});
     return {};
