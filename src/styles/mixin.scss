@@ -1,0 +1,15 @@
+@mixin fontSmall {
+    font-size: 16px;
+}
+
+@mixin fontMid {
+    font-size: 18px;
+}
+
+@mixin fontBig {
+    font-size: 22px;
+}
+
+@mixin fontUltraBig {
+    font-size: 26px;
+}
